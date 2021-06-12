@@ -56,7 +56,11 @@ rules(){
             <button id="buttonRegla" data-toggle="modal" data-target="#exampleModal" class="animated rollIn" onClick={this.rules} >REGLAS</button>
             <button id="buttonJugar" class="animated rollIn"><Link to="/formPlayer">JUGAR</Link></button>
             <p id="introduccion" class="animated flipInX" >Un juego creado y distribuido por REALITYGAMES©</p>
-            {<video src={videoPrincipal} width="700" height="400"  autoplay="true" class="animated rollOut" id="videoPre" />}
+            <video  width="700" height="400"  autoplay="true" class="animated rollOut" id="videoPre" >
+            <source src={videoPrincipal} type="video/ogg"/>
+            <source src={videoPrincipal} type="video/mp4"/>
+            <source src={videoPrincipal} type="video/webm"/>
+            </video>
           </div>
           <Modal id="Modal" isOpen={this.state.openRules}>
       
