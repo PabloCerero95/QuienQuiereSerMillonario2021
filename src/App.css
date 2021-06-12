@@ -1,0 +1,700 @@
+.divPrincipal{
+  background-image: url("/src/img/57.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#logo{
+  position: absolute;
+  width: 100vh;
+  right: 60vh;
+  bottom: 40vh;
+  animation-delay: 15s;
+}
+
+
+
+#buttonRegla{
+  background-color: rosybrown;
+  height: 5vh;
+  position: absolute;
+  bottom: 20vh;
+  right: 101vh;
+  width: 20vh;
+  background-color: rgb(225, 207, 46, 0.8) ;
+  font-family: 'Teko', sans-serif;
+  color: white;
+  font-size: 3vh;
+  animation-delay: 17s;
+}
+#alertaBody{
+  background-color: #483D8B;
+
+  color:white;
+  font-family: 'Teko', sans-serif;
+  font-size: 3vh;
+  font-weight: bolder;
+
+}
+#alertaFooter{
+  background-color: #DAA520;
+  color:white;
+  font-family: 'Teko', sans-serif;
+  font-size: 3vh;
+  font-weight: bolder;
+
+
+
+}
+
+#respuestacorrecta{
+  color:green;
+  font-family: 'Teko', sans-serif;
+  font-size: 5vh;
+  font-weight: bolder;
+}
+
+#titleLoading{
+  color:white;
+  font-family: 'Teko', sans-serif;
+  font-size: 7vh;
+  font-weight: bolder;
+  position: relative;
+  top: 200px;
+  
+
+}
+
+#cierreModal{
+  background-color: white;
+  color:black;
+  font-family: 'Teko', sans-serif;
+  font-size: 3vh;
+  font-weight: bolder;
+  margin-right: auto;
+
+
+}
+
+#alertaHeader{
+  background-color: #DAA520;
+  opacity: 0.9;
+  color:white;
+  font-family: 'Teko', sans-serif;
+  font-size: 6vh;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+
+}
+
+#Modal{
+  border-radius: 10px;
+  border-color: rgb(0, 208, 255);
+  border-style: solid;
+  opacity: 0.9;
+  text-align: center;
+  
+}
+
+#modalTitle{
+  color:white;
+  font-family: 'Teko', sans-serif;
+  font-size: 6vh;
+  font-weight: bolder;
+  margin:auto;
+  text-align: center;
+}
+
+#buttonJugar{
+  height: 5vh;
+  position: absolute;
+  bottom: 30vh;
+  right: 101vh;
+  width: 20vh;
+  background-color: rgb(225, 207, 46, 0.8) ;
+  text-shadow: 30vh black;
+  font-family: 'Teko', sans-serif;
+  font-size: 3vh;
+   animation-delay: 16s; /* 17 */
+}
+
+#buttonJugar a {
+  color: white;
+}
+
+#introduccion{
+  animation-delay: 17s;
+  font-family: 'Teko', sans-serif;
+  height: 5vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 85%;
+  left: 27%;
+  color:white;
+ font-size: 6vh;
+}
+#introduccionShow{
+  animation-delay: 10s;
+  font-family: 'Teko', sans-serif;
+  height: 5vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 85%;
+  left: 27%;
+  color:white;
+ font-size: 6vh;
+}
+
+#introduccionShow2{
+  animation-delay: 12s;
+  font-family: 'Teko', sans-serif;
+  height: 5vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 27%;
+  color:white;
+ font-size: 6vh;
+}
+
+#videoPre{
+  animation-delay: 15s; /* 15 */
+  position: absolute;
+  right: 55vh;
+  bottom: 30vh;
+  border-style: solid;
+  border-radius: 8vh;
+  border-color: rgb(225, 207, 46, 0.7) ;
+}
+
+#videoShow{
+  position: absolute;
+  right: 55vh;
+  bottom: 30vh;
+  border-style: solid;
+  border-radius: 8vh;
+  border-color: rgb(225, 207, 46, 0.7) ;
+}
+
+#divFormPlayer{
+  padding: 30vh ;
+  background-image: url("/src/img/57.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#contentForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+
+#fondoFormPlayer{
+  background-color: rgb(225, 207, 46, 0.8) ;
+  height: 45vh;
+  width: 60vh;
+  border-style: solid;
+  border-radius: 3vh;
+  border-color: yellow;
+  color: white;
+  font-family: 'Teko', sans-serif;
+  font-size: 3vh;
+}
+
+#fondoGame{
+  background-image: url("/src/img/57.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  
+}
+
+#fondoQuestion{
+  background-color: rgb(9, 60, 106);
+  opacity: 0.8;
+  height: 45vh;
+  width: 80vh;
+  margin-top: 0vh;
+  margin-left: -10vh;
+  border-style: solid;
+  border-radius: 3vh;
+  border-color:   #DAA520;
+  color: white;
+  font-family: 'Teko', sans-serif;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#divQuestion{
+  border-style: solid;
+  border-color: white;
+  background-color: rgb(17, 111, 194);
+  height: 9vh;
+  width: 65vh;
+  animation-delay:4.5s;
+  position: relative;
+  top: -40px;
+}
+
+
+
+#divAnswer1{
+  border-color: white;
+  color: white;
+  background-color: rgb(17, 111, 194);
+  border-style: solid;
+  border-radius: 80vh;
+  animation-delay:0.5s;
+}
+
+#divAnswer2{
+  border-color: white;
+  color: white;
+  background-color: rgb(17, 111, 194);
+  border-style: solid;
+  border-radius: 80vh;
+  animation-delay:1.5s;
+}
+#divAnswer3{
+  border-color: white;
+  color: white;
+  background-color: rgb(17, 111, 194);
+  border-style: solid;
+  border-radius: 80vh;
+  animation-delay:2.5s;
+}
+#divAnswer4{
+  border-color: white;
+  color: white;
+  background-color: rgb(17, 111, 194);
+  border-style: solid;
+  border-radius: 80vh;
+  animation-delay:3.5s;
+}
+
+
+#contenedorFondoQuestion{
+  clear: both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ #divAnswerTop{
+  margin-top:20px;
+}
+
+#divAnswerBottom{
+  margin-top:20px;
+}
+
+#divAnswer1 {
+  margin-right: 10px;
+}
+
+#divAnswer3 {
+  margin-right: 10px;
+}
+
+#fondoComodines{
+  float: left;
+  height: 45vh;
+  width: 20vh;
+  background-color: #483D8B;
+  opacity: 0.8;
+  margin-top: 2%;
+  margin-left: 2%;
+  text-align: center;
+  border-radius: 10px;
+  border-color: #DAA520;;
+  border-style: solid;
+}
+
+#countdown{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18vh;
+  font-size: 10vw;
+}
+
+#fondoPrize{
+  border-radius: 10px;
+  border-color: #DAA520;;
+  border-style: solid;
+  width: 45vh;
+  float:right;
+  margin-right: 3vh;
+  margin-top: 5vh;
+  background-color: #483D8B;
+  opacity: 0.8;
+ 
+}
+
+#RoundQuestion{
+  color: white;
+  font-size: 5vh;
+  font-family: 'Teko', sans-serif;
+  font-weight: bolder;
+  margin:auto;
+  text-align: center;
+}
+
+#PrizeRound{
+  color: white;
+  font-size: 5vh;
+  font-family: 'Teko', sans-serif;
+  font-weight: bolder;
+  margin:auto;
+  text-align: center;
+}
+
+#Player{
+  color: white;
+  font-size: 5vh;
+  font-family: 'Teko', sans-serif;
+  font-weight: bolder;
+  margin:auto;
+  text-align: center;
+}
+
+
+#divClassification{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#titleClassification{
+  padding-top: 5vh;
+  color: white;
+  font-size: 7vh;
+  font-family: 'Teko', sans-serif;
+  font-weight: bolder;
+  margin:auto;
+  text-align: center;
+}
+
+#contenedorClassification{
+  width: 80vh;
+  height: 70vh;
+  margin-top: 5vh;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 10px;
+  background-color: #483D8B;
+  color: white;
+  font-size: 3.8vh;
+  font-family: 'Teko', sans-serif;
+  font-weight: bolder;
+  margin:auto;
+  text-align: center;
+}
+
+#logoQuestion{
+  width: 70vh;
+  float: left;
+  margin-left: 19.5%;
+  margin-top: 3vh;
+}
+
+#logoLoading{
+  width: 70vh;
+  position: relative;
+  top: 150px;
+  left: 450px;
+  border-radius:50%;
+  animation-name: girar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+#buttonQuestion{
+  margin-top: 2vh;
+  width: 11.5vh;
+height: 11.3vh;
+border-radius: 2px;
+border-color: #DAA520;;
+  border-style: solid;
+
+}
+#button50{
+  width: 11.5vh;
+  height: 11.3vh;
+margin-top: 3vh;
+border-radius: 2px;
+border-color: #DAA520;;
+  border-style: solid;
+  
+}
+#buttonLlamada{
+  width: 11.5vh;
+  height: 11.3vh;
+margin-top: 4vh;
+border-radius: 2px;
+border-color: #DAA520;;
+  border-style: solid;
+  
+}
+
+#imgQuestion{
+width: 11vh;
+margin-left: -1vh;
+height: 10.7vh;
+margin-top:-0.2vh;
+}
+
+#img50{
+  width: 11vh;
+margin-left: -1vh;
+height: 10.6vh;
+margin-top:-0.1vh;
+}
+
+#imgLlamada{
+  width: 11vh;
+  margin-left: -1vh;
+  height: 10.8vh;
+  margin-top:-0.2vh;
+}
+
+#table{
+  height: 30vh;
+  width: 80.5vh;
+  border-color: yellow;
+  background-color:rgb(9, 60, 106);
+}
+
+#buttonCredits{
+  height: 5vh;
+  position: absolute;
+  bottom: 5vh;
+  right: 94vh;
+  width: 20vh;
+  color: white !important;
+  background-color: rgb(225, 207, 46, 0.8) ;
+  text-shadow: 30vh black;
+  font-family: 'Teko', sans-serif;
+  font-size: 3vh;
+  animation-delay: 2s; 
+}
+
+#titlebutton{
+  color:white;
+}
+
+#strapi{
+  animation-delay: 8s;
+  position: relative;
+  top: -25vh;
+  width: 30vh;
+  height: 20vh;
+  border-radius: 10px;
+  border-color: #DAA520;;
+  border-style: solid;
+}
+
+#js{
+  position: relative;
+  top: -3vh;
+  width: 25vh;
+  animation-delay: 5s;
+  border-radius: 10px;
+  border-color: #DAA520;;
+  border-style: solid;
+}
+
+#react{
+  position: relative;
+  top: 20vh;
+  width: 50vh;
+  animation-delay: 2s;
+  border-radius: 10px;
+  border-color: #DAA520;;
+  border-style: solid;
+}
+
+#divReact{
+  animation-delay: 5s;
+}
+
+#divJs{
+  animation-delay: 8s;
+  
+}
+#divStrapi{
+  animation-delay: 11s;
+}
+
+#titleCredits1{
+  color: white;
+  font-size: 10vh;
+  font-family: 'Teko', sans-serif;
+  font-weight: bolder;
+  position: relative;
+  top: 20vh;
+}
+
+#titleCredits2{
+  color: white;
+  font-size: 10vh;
+  font-family: 'Teko', sans-serif;
+  font-weight: bolder;
+  position: relative;
+  top: 20vh;
+}
+
+#divCredits1{
+  animation-delay: 12s;
+}
+
+#titleCredits2{
+  color: white;
+  font-size: 10vh;
+  font-family: 'Teko', sans-serif;
+  font-weight: bolder;
+  position: relative;
+  top: 20vh;
+  animation-delay: 12s;
+  position: relative;
+  top: 7vh;
+}
+
+#cruz{
+  animation-delay: 13s;
+  border-radius: 10px;
+  border-color: #DAA520;;
+  border-style: solid;
+  width: 45vh;
+  margin-top: -70vh;
+  margin-left: 80vh
+
+  
+}
+
+#divCruz{
+  animation-delay: 15s;
+}
+
+#Barcelo{
+  animation-delay: 15s;
+  border-radius: 10px;
+  border-color: #DAA520;;
+  border-style: solid;
+  width: 45vh;
+  margin-top: -100vh;
+  margin-left: 80vh
+}
+
+#divBarcelo{
+  animation-delay: 17s;
+}
+#divCredits2{
+  animation-delay: 17s;
+}
+
+#Betis{
+  border-radius: 10px;
+  border-color: #DAA520;;
+  border-style: solid;
+  width: 45vh;
+  margin-top: 5vh;
+  margin-left: 80vh
+}
+
+#divBetis{
+  display:none;
+  animation-delay: 2s;
+}
+#divCredits3{
+  display:none;
+  animation-delay: 4s;
+}
+
+#titleCredits3{
+  color: white;
+  font-size: 10vh;
+  font-family: 'Teko', sans-serif;
+  font-weight: bolder;
+}
+
+#Ada{
+  border-radius: 10px;
+  border-color: #DAA520;;
+  border-style: solid;
+  width: 45vh;
+  margin-top: -28vh;
+  margin-left: 80vh;
+  animation-delay: 2s;
+}
+
+#divAda{
+  display:none;
+  animation-delay: 4s;
+  
+}
+
+#titleCredits4{
+  color: white;
+  font-size: 10vh;
+  font-family: 'Teko', sans-serif;
+  font-weight: bolder;
+  animation-delay: 4s;
+  margin-top: -18vh;
+}
+
+#divCredits4{
+  display:none;
+}
+
+#divLogo{
+  display:none;
+}
+
+#Logo{
+  width: 90vh;
+  margin-top: -30vh;
+  margin-left: 59vh;
+  animation-delay: 5s;
+}
+
+#divButton{
+  display:none;
+}
+
+#Button{
+  height: 8vh;
+  background-color: rgb(225, 207, 46, 0.8) ;
+  font-family: 'Teko', sans-serif;
+  color: white;
+  font-size: 3vh;
+  animation-delay: 6s;
+  margin-top: 11vh;
+  margin-left: 94vh;
+}
+
+
