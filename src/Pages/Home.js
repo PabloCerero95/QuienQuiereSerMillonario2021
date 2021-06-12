@@ -3,10 +3,10 @@ import {Link} from 'react-router-dom'
 import logo from '../img/Logo.png';
 import ReactAudioPlayer from 'react-audio-player';
 import ReactPlayer from 'react-player'
-import videoPrincipal from '../video/videoPre.mp4'
 import $ from 'jquery'
 import {Button, ModalHeader, ModalBody, ModalFooter, Modal} from 'reactstrap';
 import "bootstrap/dist/css/bootstrap.css";
+import videoPrincipal from '../video/videoOpening.mp4'
 
 
 if(!localStorage.getItem('numRounds') || localStorage.getItem('numRounds') === 'final' ){
