@@ -17,7 +17,7 @@ import React, { Component } from 'react';
     componentWillMount() {
         if(window.location.pathname === "/goShow"){
             setTimeout(function(){
-                window.location.assign("http://localhost:3000/question");
+                window.location.assign("https://quienquieresermillonario2021.netlify.app/question");
               }, 32500);
               
          }
