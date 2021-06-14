@@ -22,7 +22,8 @@ class Question extends React.Component {
         super(props)
         this.state = { pregunta: undefined, respuestaCorrecta: undefined, openQuestion: false, open50: false, 
             openLlamada: false, openCronometro: false, timer: 30, openAcierto: false, 
-            openFallo: false, openComodinFail: false, openPremioFinal: false, openEsperaClasificacion: false, openFalloFinal: false}
+            openFallo: false, openComodinFail: false, openPremioFinal: false, 
+            openEsperaClasificacion: false, openFalloFinal: false, openFalloTonto: false}
         this.comodinQuestion = this.comodinQuestion.bind(this)
         this.validateQuestion = this.validateQuestion.bind(this)
         this.comodin50 = this.comodin50.bind(this)
@@ -62,6 +63,10 @@ class Question extends React.Component {
                     numRounds++;
                     localStorage.setItem("numRounds", numRounds);
                     $("#divAnswer1").css("background-color", "orange");
+                    $('#divAnswer1').attr("disabled", true)
+                    $('#divAnswer2').attr("disabled", true);
+                    $('#divAnswer3').attr("disabled", true);
+                    $('#divAnswer4').attr("disabled", true);
                         setTimeout(function(){
                             $('#audioQuestion').trigger('pause');
                             $("#divAnswer1").css("background-color", "green");
@@ -75,6 +80,9 @@ class Question extends React.Component {
                     numRounds++;
                     localStorage.setItem("numRounds", numRounds);
                     $("#divAnswer2").css("background-color", "orange");
+                    $('#divAnswer1').attr("disabled", true);
+                    $('#divAnswer3').attr("disabled", true);
+                    $('#divAnswer4').attr("disabled", true);
                         setTimeout(function(){
                             $('#audioQuestion').trigger('pause');
                             $("#divAnswer2").css("background-color", "green");
@@ -88,6 +96,10 @@ class Question extends React.Component {
                     numRounds++;
                     localStorage.setItem("numRounds", numRounds);
                     $("#divAnswer3").css("background-color", "orange");
+                    $('#divAnswer1').attr("disabled", true);
+                    $('#divAnswer2').attr("disabled", true);
+                    $('#divAnswer3').attr("disabled", true);
+                    $('#divAnswer4').attr("disabled", true);
                     setTimeout(function(){
                             $('#audioQuestion').trigger('pause');
                             $("#divAnswer3").css("background-color", "green");
@@ -101,6 +113,10 @@ class Question extends React.Component {
                     numRounds++;
                     localStorage.setItem("numRounds", numRounds);
                     $("#divAnswer4").css("background-color", "orange");
+                    $('#divAnswer1').attr("disabled", true);
+                    $('#divAnswer2').attr("disabled", true);
+                    $('#divAnswer3').attr("disabled", true);
+                    $('#divAnswer4').attr("disabled", true);
                     setTimeout(function(){
                             $('#audioQuestion').trigger('pause');
                             $("#divAnswer4").css("background-color", "green");
@@ -117,6 +133,10 @@ class Question extends React.Component {
                     numRounds++;
                     localStorage.setItem("numRounds", numRounds);
                     $("#divAnswer1").css("background-color", "orange");
+                    $('#divAnswer1').attr("disabled", true);
+                    $('#divAnswer2').attr("disabled", true);
+                    $('#divAnswer3').attr("disabled", true);
+                    $('#divAnswer4').attr("disabled", true);
                         setTimeout(function(){
                             $('#audioQuestion').trigger('pause');
                             $("#divAnswer1").css("background-color", "green");
@@ -133,6 +153,10 @@ class Question extends React.Component {
                     numRounds++;
                     localStorage.setItem("numRounds", numRounds);
                     $("#divAnswer2").css("background-color", "orange");
+                    $('#divAnswer1').attr("disabled", true);
+                    $('#divAnswer2').attr("disabled", true);
+                    $('#divAnswer3').attr("disabled", true);
+                    $('#divAnswer4').attr("disabled", true);
                         setTimeout(function(){
                             $('#audioQuestion').trigger('pause');
                             $("#divAnswer2").css("background-color", "green");
@@ -149,6 +173,10 @@ class Question extends React.Component {
                     numRounds++;
                     localStorage.setItem("numRounds", numRounds);
                     $("#divAnswer3").css("background-color", "orange");
+                    $('#divAnswer1').attr("disabled", true);
+                    $('#divAnswer2').attr("disabled", true);
+                    $('#divAnswer3').attr("disabled", true);
+                    $('#divAnswer4').attr("disabled", true);
                     setTimeout(function(){
                             $('#audioQuestion').trigger('pause');
                             $("#divAnswer3").css("background-color", "green");
@@ -165,6 +193,10 @@ class Question extends React.Component {
                     numRounds++;
                     localStorage.setItem("numRounds", numRounds);
                     $("#divAnswer4").css("background-color", "orange");
+                    $('#divAnswer1').attr("disabled", true);
+                    $('#divAnswer2').attr("disabled", true);
+                    $('#divAnswer3').attr("disabled", true);
+                    $('#divAnswer4').attr("disabled", true);
                     setTimeout(function(){
                             $('#audioQuestion').trigger('pause');
                             $("#divAnswer4").css("background-color", "green");
@@ -184,6 +216,10 @@ class Question extends React.Component {
             if(this.state.pregunta.Answer_1 == respuestaUsuario){
                 this.state.pregunta.PriceQuestion = 0;
                 $("#divAnswer1").css("background-color", "orange");
+                $('#divAnswer1').attr("disabled", true);
+                $('#divAnswer2').attr("disabled", true);
+                $('#divAnswer3').attr("disabled", true);
+                $('#divAnswer4').attr("disabled", true);
                 setTimeout(function(){
                     $('#audioQuestion').trigger('pause');
                     $("#divAnswer1").css("background-color", "red");
@@ -196,6 +232,10 @@ class Question extends React.Component {
             }else if(this.state.pregunta.Answer_2 == respuestaUsuario){
                 this.state.pregunta.PriceQuestion = 0;
                 $("#divAnswer2").css("background-color", "orange");
+                $('#divAnswer1').attr("disabled", true);
+                $('#divAnswer2').attr("disabled", true);
+                $('#divAnswer3').attr("disabled", true);
+                $('#divAnswer4').attr("disabled", true);
                 setTimeout(function(){
                     $('#audioQuestion').trigger('pause');
                     $("#divAnswer2").css("background-color", "red");
@@ -207,6 +247,10 @@ class Question extends React.Component {
             }else if(this.state.pregunta.Answer_3 == respuestaUsuario){
                 this.state.pregunta.PriceQuestion = 0;
                 $("#divAnswer3").css("background-color", "orange");
+                $('#divAnswer1').attr("disabled", true);
+                $('#divAnswer2').attr("disabled", true);
+                $('#divAnswer3').attr("disabled", true);
+                $('#divAnswer4').attr("disabled", true);
                 setTimeout(function(){
                     $('#audioQuestion').trigger('pause');
                     $("#divAnswer3").css("background-color", "red");
@@ -219,6 +263,10 @@ class Question extends React.Component {
             }else if(this.state.pregunta.Answer_4 == respuestaUsuario){
                 this.state.pregunta.PriceQuestion = 0;
                 $("#divAnswer4").css("background-color", "orange");
+                $('#divAnswer1').attr("disabled", true);
+                $('#divAnswer2').attr("disabled", true);
+                $('#divAnswer3').attr("disabled", true);
+                $('#divAnswer4').attr("disabled", true);
                 setTimeout(function(){
                     $('#audioQuestion').trigger('pause');
                     $("#divAnswer4").css("background-color", "red");
@@ -229,11 +277,81 @@ class Question extends React.Component {
                     }.bind(this), 6000);
             }
 
-           }else{
+
+        }else if(this.state.pregunta.Round == 1){
+            if(this.state.pregunta.Answer_1 == respuestaUsuario){
+                this.state.pregunta.PriceQuestion = 0;
+                $("#divAnswer1").css("background-color", "orange");
+                $('#divAnswer1').attr("disabled", true);
+                $('#divAnswer2').attr("disabled", true);
+                $('#divAnswer3').attr("disabled", true);
+                $('#divAnswer4').attr("disabled", true);
+                setTimeout(function(){
+                    $('#audioQuestion').trigger('pause');
+                    $("#divAnswer1").css("background-color", "red");
+                    $('#audioIncorrect').trigger('play');
+                  }, 4000);
+                  setTimeout(function(){
+                    this.setState({openFalloTonto: !this.state.openFalloTonto});  
+                    }.bind(this), 6000);
+
+            }else if(this.state.pregunta.Answer_2 == respuestaUsuario){
+                this.state.pregunta.PriceQuestion = 0;
+                $("#divAnswer2").css("background-color", "orange");
+                $('#divAnswer1').attr("disabled", true);
+                $('#divAnswer2').attr("disabled", true);
+                $('#divAnswer3').attr("disabled", true);
+                $('#divAnswer4').attr("disabled", true);
+                setTimeout(function(){
+                    $('#audioQuestion').trigger('pause');
+                    $("#divAnswer2").css("background-color", "red");
+                    $('#audioIncorrect').trigger('play');
+                  }, 4000);
+                  setTimeout(function(){
+                    this.setState({openFalloTonto: !this.state.openFalloTonto});  
+                    }.bind(this), 6000);
+            }else if(this.state.pregunta.Answer_3 == respuestaUsuario){
+                this.state.pregunta.PriceQuestion = 0;
+                $("#divAnswer3").css("background-color", "orange");
+                $('#divAnswer1').attr("disabled", true);
+                $('#divAnswer2').attr("disabled", true);
+                $('#divAnswer3').attr("disabled", true);
+                $('#divAnswer4').attr("disabled", true);
+                setTimeout(function(){
+                    $('#audioQuestion').trigger('pause');
+                    $("#divAnswer3").css("background-color", "red");
+                    $('#audioIncorrect').trigger('play');
+                    $(this.respuestaCorrecta).css("background-color", "green");
+                  }, 4000);
+                  setTimeout(function(){
+                    this.setState({openFalloTonto: !this.state.openFalloTonto});  
+                    }.bind(this), 6000);
+            }else if(this.state.pregunta.Answer_4 == respuestaUsuario){
+                this.state.pregunta.PriceQuestion = 0;
+                $("#divAnswer4").css("background-color", "orange");
+                $('#divAnswer1').attr("disabled", true);
+                $('#divAnswer2').attr("disabled", true);
+                $('#divAnswer3').attr("disabled", true);
+                $('#divAnswer4').attr("disabled", true);
+                setTimeout(function(){
+                    $('#audioQuestion').trigger('pause');
+                    $("#divAnswer4").css("background-color", "red");
+                    $('#audioIncorrect').trigger('play');
+                  }, 4000);
+                  setTimeout(function(){
+                    this.setState({openFalloTonto: !this.state.openFalloTonto});  
+                    }.bind(this), 6000);
+            }
+
+        }else{
            
                 
                 if(this.state.pregunta.Answer_1 == respuestaUsuario){
                     $("#divAnswer1").css("background-color", "orange");
+                    $('#divAnswer1').attr("disabled", true);
+                    $('#divAnswer2').attr("disabled", true);
+                    $('#divAnswer3').attr("disabled", true);
+                    $('#divAnswer4').attr("disabled", true);
                     setTimeout(function(){
                         $('#audioQuestion').trigger('pause');
                         $("#divAnswer1").css("background-color", "red");
@@ -245,6 +363,10 @@ class Question extends React.Component {
 
                 }else if(this.state.pregunta.Answer_2 == respuestaUsuario){
                     $("#divAnswer2").css("background-color", "orange");
+                    $('#divAnswer1').attr("disabled", true);
+                    $('#divAnswer2').attr("disabled", true);
+                    $('#divAnswer3').attr("disabled", true);
+                    $('#divAnswer4').attr("disabled", true);
                     setTimeout(function(){
                         $('#audioQuestion').trigger('pause');
                         $("#divAnswer2").css("background-color", "red");
@@ -255,6 +377,10 @@ class Question extends React.Component {
                         }.bind(this), 6000);
                 }else if(this.state.pregunta.Answer_3 == respuestaUsuario){
                     $("#divAnswer3").css("background-color", "orange");
+                    $('#divAnswer1').attr("disabled", true);
+                    $('#divAnswer2').attr("disabled", true);
+                    $('#divAnswer3').attr("disabled", true);
+                    $('#divAnswer4').attr("disabled", true);
                     setTimeout(function(){
                         $('#audioQuestion').trigger('pause');
                         $("#divAnswer3").css("background-color", "red");
@@ -266,6 +392,10 @@ class Question extends React.Component {
                         }.bind(this), 6000);
                 }else if(this.state.pregunta.Answer_4 == respuestaUsuario){
                     $("#divAnswer4").css("background-color", "orange");
+                    $('#divAnswer1').attr("disabled", true);
+                    $('#divAnswer2').attr("disabled", true);
+                    $('#divAnswer3').attr("disabled", true);
+                    $('#divAnswer4').attr("disabled", true);
                     setTimeout(function(){
                         $('#audioQuestion').trigger('pause');
                         $("#divAnswer4").css("background-color", "red");
@@ -564,6 +694,18 @@ class Question extends React.Component {
                         </ModalHeader>
                             <ModalBody id="alertaBody">
                                LA RESPUESTA CORRECTA ERA: <p id="respuestacorrecta">{this.state.pregunta.Answer_Correct}</p> ¡SE ACABO EL JUEGO!.. Y SE HA LLEVADO ¡¡¡{this.state.pregunta.PriceQuestion} EUROS!!! ¡SUERTE PARA LA PROXIMA VEZ!
+                            </ModalBody>
+                                <ModalFooter id="alertaFooter">
+                                <button id="cierreModal" onClick={this.createClassification} >ENVIAR TU NOMBRE A LA CLASIFICACION</button>
+                                ¡QUIEN QUIERE SER MILLONARIO!
+                                </ModalFooter>
+                    </Modal>
+                    <Modal id="Modal" isOpen={this.state.openFalloTonto}>
+                        <ModalHeader id="alertaHeader">
+                            <h1 id="modalTitle">¡HAS FALLADO LA PRIMERA PREGUNTA!</h1>
+                        </ModalHeader>
+                            <ModalBody id="alertaBody">
+                               LA RESPUESTA CORRECTA ERA: <p id="respuestacorrecta">{this.state.pregunta.Answer_Correct}</p> ¡SE ACABO EL JUEGO!.. ¿COMO HAS PODIDO FALLAR EN LA PRIMERA PREGUNTA? ¡COMO CASTIGO TE HAS LLEVADO...{this.state.pregunta.PriceQuestion} EUROS!!! ¡NO VUELVAS MAS!
                             </ModalBody>
                                 <ModalFooter id="alertaFooter">
                                 <button id="cierreModal" onClick={this.createClassification} >ENVIAR TU NOMBRE A LA CLASIFICACION</button>
